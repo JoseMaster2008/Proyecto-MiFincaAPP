@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Monserrat", sans-serif;
+}
+
+body {
+    width: 100%;
+    background: #f5f5f5;
+    position: relative;
+    display: flex;
+}
+/*Contenedor del menu*/
+#menu {
+    background: #2f3e46;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+/*Contenedor del logo del menu*/
+#menu .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 30px 0 0 30px;
+}
+/*Logo del menu*/
+#menu .logo img {
+    width: 40px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+#menu .logo h2 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Cedarville Cursive", cursive;
+}
+/*Contenedor de los elementos del menu*/
+#menu .items {
+    margin-top: 50px;
+}
+/*Elementos del menu*/
+#menu .items li {
+    list-style: none;
+    padding: 15px 0;
+    transition: .3s ease;
+}
+/*Efecto hover de los elementos del menu*/
+#menu .items li:hover {
+    background: #1f7a1f;
+    color: rgb(0, 0, 0);
+    transition: .2s;
+    cursor: pointer;
+}
+/*Elemento activo del menu*/
+#menu .items li:nth-child(1){
+    border-left: 4px solid #1f7a1f;
+}
+/*Logos*/
+#menu .items li i {
+    color: #e0e1dd;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+}
+/*Efecto hover de los logos y enlaces del menu*/
+#menu .items li:hover i,
+#menu .items li:hover a {
+    color: rgb(255, 255, 255);
+    transition: .2s;
+}
+/*Enlaces*/
+#menu .items li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 300px;
+    transition: .3s ease;
+}
+
+/*Contenedor de la interfaz*/
+#interface {
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    position: relative;
+}
+/*Contenedor de la barra de navegación*/
+#interface .navigation {
+    display: flex;
+    justify-content: space-between;
+    background: #2f3e46;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    position: fixed;
+    width: calc(100% - 300px);
+}
+/*Contenedor de la barra de búsqueda*/
+#interface .navigation .search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+}
+/*Logo de la barra de búsqueda*/
+#interface .navigation .search i {
+    margin-right: 14px;
+}
+/*Input de la barra de búsqueda*/
+#interface .navigation .search input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+/*Contenedor del perfil de usuario*/
+#interface .navigation .profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*Logo del perfil de usuario*/
+#interface .navigation .profile i {
+    font-weight: 400;
+    font-size: 19px;
+    margin-right: 20px;
+}
+/*Imagen del perfil de usuario*/
+#interface .navigation .profile img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/*Color del logo de notificaciones*/
+#interface .navigation .profile i{
+    color: #fff;
+}
+/*Efecto hover del logo de notificaciones*/
+#interface .navigation .profile i:hover{
+    color: #1f7a1f;
+    transition: .2s;
+    cursor: pointer;
+}
+/*Contenedor del contenido de la interfaz*/
+.n1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*Logo del menu para dispositivos moviles*/
+#menu-btn {
+    display: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;    
+}
+/*Contenedor del nombre de la interfaz*/
+.i-name{
+    color: #444a53;
+    padding: 30px 30px 0 30px;
+    font-size: 24px;
+    font-weight: 700px;
+    margin-top: 70px;
+}
+/*Contenedor de los valores de la interfaz*/
+.values {
+    padding: 30px 30px 0 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*Contenedor de cada valor de la interfaz*/
+.values .val-box {
+    background: rgb(255, 255, 255);
+    width: 235px;
+    padding: 16px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*Logo de cada valor de la interfaz*/
+.values .val-box i {
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    margin-right: 15px;
+}
+/*Colores de cada logo de cada valor de la interfaz*/
+.values .val-box:nth-child(1) i {
+    background: rgb(255, 0, 0);
+}
+
+.values .val-box:nth-child(2) i {
+    background: rgb(0, 183, 255);
+}
+
+.values .val-box:nth-child(3) i {
+    background: rgb(0, 58, 250);
+}
+
+.values .val-box:nth-child(4) i {
+    background: rgb(183, 0, 255);
+}
+
+.values .val-box:nth-child(5) i {
+    background: rgb(47, 0, 255);
+}
+/*Nombre de cada valor de la interfaz*/
+.values .val-box h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+/*Valor de cada valor de la interfaz*/
+.values .val-box span {
+    font-size: 15px;
+    color: rgb(134, 141, 151);
+}
+/*Contenedor del tablero de la interfaz*/
+.board {
+    width: 94%;
+    margin: 30px 0 30px 30px;
+    overflow: auto;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+/*Contenedor de cada fila del tablero de la interfaz*/
+.board img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+/*Nombre de cada fila del tablero de la interfaz*/
+.board h5 {
+    font-size: 14px;
+    font-weight: 600;
+}
+/*Descripción de cada fila del tablero de la interfaz*/
+.board p {
+    font-weight: 400;
+    font-size: 13px;
+    color: rgb(134, 141, 151);
+}
+/*Contenedor de la descripción de cada fila del tablero de la interfaz*/
+.board .people {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+}
+/*Contenedor de la tabla del tablero de la interfaz*/
+table {
+    border-collapse: collapse;
+}
+/*Contenedor de cada fila de la tabla del tablero de la interfaz*/
+tr {
+    border-bottom: 1px solid #eef0f3;
+}
+/*Contenedor de cada columna de la tabla del tablero de la interfaz*/
+thead  td{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    background: rgb(255, 255, 255);
+    text-align: start;
+    padding: 15px;
+}
+/*Contenedor de cada columna de cada fila de la tabla del tablero de la interfaz*/
+tbody tr td {
+    padding: 10px 15px;
+}
+/*Contenedor de cada fila activa de la tabla del tablero de la interfaz*/
+.active p {
+    background: rgb(109, 238, 92);
+    padding: 2px 10px;
+    display: inline-block;
+    border-radius: 40px;
+    color: seagreen;
+}
+/*Contenedor de cada fila inactiva de la tabla del tablero de la interfaz*/
+.edit .edit-btn {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(0, 89, 255);
+    border-radius: 20px;
+    text-decoration: none;
+}
+.edit .edit-btn i {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    line-height: 25px;
+    margin: auto;
+    display: block;
+}
+.edit .delete-btn {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 20px;
+    text-decoration: none;
+}
+.edit .delete-btn i {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    line-height: 25px;
+    margin: auto;
+    display: block;
+}
+/*Contenedor de cada fila inactiva de la tabla del tablero de la interfaz*/
+@media (max-width: 769px) {
+    #menu {
+    width: 270px;
+    position: fixed;
+    left: -270px;
+    }
+    #menu.active {
+    left: 0px;
+    }
+    #menu-btn {
+    display: initial;
+    }
+    #interface {
+        width: 100%;
+        margin-left: 0;
+        display: inline-block;
+        transition: 0.3s ease;
+    }
+    #menu.active ~ #interface {
+        width: calc(100% - 270px);
+        margin-left: 270px;
+    }
+    #interface .navigation {
+        width: 100%;
+    }
+    .values {
+    padding: 30px 30px 0 30px;
+    justify-content: flex-start;
+    }
+    .values .val-box {
+    padding: 16px 20px;
+    margin: 10px 20px 10px 0;
+    }
+    .board {
+    width: 92%;
+    padding: 0;
+    overflow-x: auto;
+    }
+    .table {
+    width: 100%;
+    border-collapse: collapse;
+    }
+}
+/*Contenedor de cada fila activa de la tabla del tablero de la interfaz*/
+@media (max-width: 470px) {
+   #interface .navigation {
+    padding: 15px;
+   }
+   #interface .navigation .search input {
+    width: 150px;
+   }
+   .i-name {
+    padding: 30px 15px 0 15px;
+   }
+   .values {
+    padding: 15px 15px 0 15px;
+   }
+   .values .val-box {
+    width: 100%;
+    margin: 8px 0;
+   }
+   .board {
+    margin: 30px 15px 30px 15px;
+    }
+}
