@@ -11,7 +11,7 @@
     
     <div class="container">
         <div class="container-form">
-            <form class="sign-in">
+            <form class="sign-in" action="php/login.php" method="POST">
                 <h2>Iniciar Sesión</h2>
                 <div class="social-networks">
                     <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -22,19 +22,19 @@
                 <span>Use su correo y contraseña</span>
                 <div class="container-input">
                     <i class="fas fa-envelope"></i>
-                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
                 </div>
                 <div class="container-input">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Contraseña" required>
+                    <input type="password" name="password" placeholder="Contraseña" required>
                 </div>
                 <a href="#">Olvidé mi contraseña</a>
-                <button class="button">Iniciar sesión</button>
+                <button type="submit" class="button">Iniciar sesión</button>
             </form>
         </div>
 
         <div class="container-form">
-            <form class="sign-up">
+            <form class="sign-up" action="php/registro.php" method="POST">
                 <h2>Registrarse</h2>
                 <div class="social-networks">
                     <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -45,17 +45,21 @@
                 <span>Use su correo electrónico para registrarse</span>
                 <div class="container-input">
                     <i class="fas fa-people-group"></i>
-                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="text" name="nombre" placeholder="Nombre completo" required>
                 </div>
                 <div class="container-input">
                     <i class="fas fa-envelope"></i>
-                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="container-input">
+                    <i class="fas fa-id-card"></i>
+                    <input type="text" name="documento" placeholder="Documento de identidad" required>
                 </div>
                 <div class="container-input">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Contraseña" required>
+                    <input type="password" name="password" placeholder="Contraseña" required>
                 </div>
-                <button class="button">Registrarse</button>
+                <button type="submit" class="button">Registrarse</button>
             </form>
         </div>
 
