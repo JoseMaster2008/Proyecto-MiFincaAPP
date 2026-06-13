@@ -1,0 +1,12 @@
+.body_animal{
+    padding: 0px;
+}
+
+.container-animal{
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #FAF7F0, #F5F1E8);
+}
+
+.animal-input-group{
+
+}

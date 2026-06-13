@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de usuario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body class="body_index">
+    <section id="menu">
+        <div class="logo">
+            <img src="IMG/logo.png" alt="">
+            <h2>MiFincaApp</h2>
+        </div>
+
+        <div class="items">
+            <li><i class="fa-solid fa-bars-staggered"></i><a href="#">Dashboard</a></li>
+            <li><i class="fa-solid fa-user"></i><a href="#">Usuarios</a></li>
+            <li><i class="fa-brands fa-product-hunt"></i><a href="#">Productos</a></li>
+            <li><i class="fa-solid fa-dollar-sign"></i><a href="#">Ventas</a></li>
+        </div>
+    </section>
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div class="barras">      
+                    <i id="menu-btn" class="fa-solid fa-bars"></i>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Busqueda">
+                </div>
+            </div>
+            <div class="profile">
+                <i class="fa-regular fa-bell"></i>
+                    <img src="IMG/logo2.png" alt="">
+            </div>
+        </div>
+
+        <h3 class="i-name">
+            Dashboard 
+        </h3>
+
+        <div class="values">
+            <div class="val-box">
+                <i class="fa-solid fa-users"></i>
+                <div>
+                    <h3>150</h3>
+                    <span>Usuarios</span>
+                </div>
+            </div>
+             <div class="val-box">
+                <i class="fa-solid fa-house-circle-check"></i>
+                <div>
+                    <h3>1.225</h3>
+                    <span>Fincas</span>
+                </div>
+            </div>
+             <div class="val-box">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <div>
+                    <h3>5.435</h3>
+                    <span>Ventas</span>
+                </div>
+            </div>
+             <div class="val-box">
+                <i class="fa-solid fa-comment-dollar"></i>
+                <div>
+                    <h3>$100.546.321.000</h3>
+                    <span>Recaudado</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <i class="fa-solid fa-cow"></i>
+                <div>
+                    <h3>60.000</h3>
+                    <span>Ganado</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="board">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Correo</td>
+                        <td>Cargo</td>
+                        <td>Estado</td>
+                        <td>Rol</td>
+                        <td>Telefono</td>
+                        <td>Direccion</td>
+                        <td>Acciones</td>
+                    </tr>
+                </thead>
+                <tbody>
+                     <tr>
+                        <td class="people">
+                        <img src="logo.png" alt="">
+                        <div class="people-de">
+                            <h5>Juan Perez</h5>
+                            <p>juan.perez@example.com</p>
+                        </div>
+                    </td>
+
+                    <td class="people-des">
+                        <h5>Desarrollador</h5>
+                        <p>Desarrollador web</p>
+                    </td>
+
+                    <td class="active">
+                        <p>Activo</p>
+                    </td>
+
+                    <td>
+                        <p>Admin</p>
+                    </td>
+
+                    <td class="edit">
+                        <a class="edit-btn" href="#"><i class="fa-solid fa-pen"></i></a>
+                        <a class="delete-btn" href="#"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+                    </tr>
+                     <tr>
+                        <td class="people">
+                        <img src="logo.png" alt="">
+                        <div class="people-de">
+                            <h5>Juan Perez</h5>
+                            <p>juan.perez@example.com</p>
+                        </div>
+                    </td>
+
+                    <td class="people-des">
+                        <h5>Desarrollador</h5>
+                        <p>Desarrollador web</p>
+                    </td>
+
+                    <td class="active">
+                        <p>Activo</p>
+                    </td>
+
+                    <td>
+                        <p>Admin</p>
+                    </td>
+
+                    <td class="edit">
+                        <a class="edit-btn" href="#"><i class="fa-solid fa-pen"></i></a>
+                        <a class="delete-btn" href="#"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+                    </tr>
+                     <tr>
+                        <td class="people">
+                        <img src="logo.png" alt="">
+                        <div class="people-de">
+                            <h5>Juan Perez</h5>
+                            <p>juan.perez@example.com</p>
+                        </div>
+                    </td>
+
+                    <td class="people-des">
+                        <h5>Desarrollador</h5>
+                        <p>Desarrollador web</p>
+                    </td>
+
+                    <td class="active">
+                        <p>Activo</p>
+                    </td>
+
+                    <td>
+                        <p>Admin</p>
+                    </td>
+
+                    <td class="edit">
+                        <a class="edit-btn" href="#"><i class="fa-solid fa-pen"></i></a>
+                        <a class="delete-btn" href="#"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+                    </tr>
+                     <tr>
+                        <td class="people">
+                        <img src="logo.png" alt="">
+                        <div class="people-de">
+                            <h5>Juan Perez</h5>
+                            <p>juan.perez@example.com</p>
+                        </div>
+                    </td>
+
+                    <td class="people-des">
+                        <h5>Desarrollador</h5>
+                        <p>Desarrollador web</p>
+                    </td>
+
+                    <td class="active">
+                        <p>Activo</p>
+                    </td>
+
+                    <td>
+                        <p>Admin</p>
+                    </td>
+
+                    <td class="edit">
+                        <a class="edit-btn" href="#"><i class="fa-solid fa-pen"></i></a>
+                        <a class="delete-btn" href="#"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+                    </tr>
+                     <tr>
+                        <td class="people">
+                        <img src="logo.png" alt="">
+                        <div class="people-de">
+                            <h5>Juan Perez</h5>
+                            <p>juan.perez@example.com</p>
+                        </div>
+                    </td>
+
+                    <td class="people-des">
+                        <h5>Desarrollador</h5>
+                        <p>Desarrollador web</p>
+                    </td>
+
+                    <td class="active">
+                        <p>Activo</p>
+                    </td>
+
+                    <td>
+                        <p>Admin</p>
+                    </td>
+
+                    <td class="edit">
+                        <a class="edit-btn" href="#"><i class="fa-solid fa-pen"></i></a>
+                        <a class="delete-btn" href="#"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+                    </tr>
+                     <tr>
+                        <td class="people">
+                        <img src="logo.png" alt="">
+                        <div class="people-de">
+                            <h5>Juan Perez</h5>
+                            <p>juan.perez@example.com</p>
+                        </div>
+                    </td>
+
+                    <td class="people-des">
+                        <h5>Desarrollador</h5>
+                        <p>Desarrollador web</p>
+                    </td>
+
+                    <td class="active">
+                        <p>Activo</p>
+                    </td>
+
+                    <td>
+                        <p>Admin</p>
+                    </td>
+
+                    <td class="edit">
+                        <a class="edit-btn" href="#"><i class="fa-solid fa-pen"></i></a>
+                        <a class="delete-btn" href="#"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+                    </tr>
+                     <tr>
+                        <td class="people">
+                        <img src="logo.png" alt="">
+                        <div class="people-de">
+                            <h5>Juan Perez</h5>
+                            <p>juan.perez@example.com</p>
+                        </div>
+                    </td>
+
+                    <td class="people-des">
+                        <h5>Desarrollador</h5>
+                        <p>Desarrollador web</p>
+                    </td>
+
+                    <td class="active">
+                        <p>Activo</p>
+                    </td>
+
+                    <td>
+                        <p>Admin</p>
+                    </td>
+
+                    <td class="edit">
+                        <a class="edit-btn" href="#"><i class="fa-solid fa-pen"></i></a>
+                        <a class="delete-btn" href="#"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+                    </tr>
+                     <tr>
+                        <td class="people">
+                        <img src="logo.png" alt="">
+                        <div class="people-de">
+                            <h5>Juan Perez</h5>
+                            <p>juan.perez@example.com</p>
+                        </div>
+                    </td>
+
+                    <td class="people-des">
+                        <h5>Desarrollador</h5>
+                        <p>Desarrollador web</p>
+                    </td>
+
+                    <td class="active">
+                        <p>Activo</p>
+                    </td>
+
+                    <td>
+                        <p>Admin</p>
+                    </td>
+
+                    <td class="edit">
+                        <a class="edit-btn" href="#"><i class="fa-solid fa-pen"></i></a>
+                        <a class="delete-btn" href="#"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+                    </tr>
+                     <tr>
+                        <td class="people">
+                        <img src="logo.png" alt="">
+                        <div class="people-de">
+                            <h5>Juan Perez</h5>
+                            <p>juan.perez@example.com</p>
+                        </div>
+                    </td>
+
+                    <td class="people-des">
+                        <h5>Desarrollador</h5>
+                        <p>Desarrollador web</p>
+                    </td>
+
+                    <td class="active">
+                        <p>Activo</p>
+                    </td>
+
+                    <td>
+                        <p>Admin</p>
+                    </td>
+
+                    <td class="edit">
+                        <a class="edit-btn" href="#"><i class="fa-solid fa-pen"></i></a>
+                        <a class="delete-btn" href="#"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script>
+        $('#menu-btn').click(function() {
+            $('#menu').toggleClass('active');
+        });
+    </script>
+</body>
+</html>

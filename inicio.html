@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body class="body_registro">
+    <div class="container-form">
+        <div class="information">
+            <div class="form-welcoming">
+                <h2>Bienvenido a MiFincaAPP</h2>
+                <p>Todo tu trabajo en un solo lugar</p>
+                <input type="button" value="Registrar usuario" onclick="window.location.href='registro.php'">
+            </div>
+        </div>
+        <div class="form-content">
+            <div class="form-content-childs">
+                <h1 class="Title">Inicia Sesión</h1>
+                <div class="icons">
+                    <ion-icon name="logo-google"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </div>
+                <p>Usa tu correo electrónico para iniciar sesión</p>
+                <form class="form">
+                    <div class="input-group">
+                        <div class="input-field">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="email" name="Email" placeholder="Correo Electrónico" required>
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-regular fa-address-book"></i>
+                            <input type="text" name="Nombre" placeholder="Nombre de Usuario" required>
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" name="Contrasena" placeholder="Contraseña" required>
+                        </div>
+                        <div class="btn-field">  
+                            <button type="submit" class="submit"><i class="fa-solid fa-user"></i>Iniciar Sesión</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</div>
+</body>
+</html>

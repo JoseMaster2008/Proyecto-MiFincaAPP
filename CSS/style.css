@@ -1,0 +1,603 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat', sans-serif;
+}
+.body_index {
+    width: 100%;
+    background: #f5f5f5;
+    position: relative;
+    display: flex;
+}
+/*Contenedor del menu*/
+#menu {
+    background: #0d1b2a;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+/*Contenedor del logo del menu*/
+#menu .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 30px 0 0 30px;
+}
+/*Logo del menu*/
+#menu .logo img {
+    width: 40px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+/*Contenedor de los elementos del menu*/
+#menu .items {
+    margin-top: 50px;
+}
+/*Elementos del menu*/
+#menu .items li {
+    list-style: none;
+    padding: 15px 0;
+    transition: .3s ease;
+}
+/*Efecto hover de los elementos del menu*/
+#menu .items li:hover {
+    background: #1f7a1f;
+    color: rgb(0, 0, 0);
+    transition: .2s;
+    cursor: pointer;
+}
+/*Elemento activo del menu*/
+#menu .items li:nth-child(1){
+    border-left: 4px solid #1f7a1f;
+}
+/*Logos*/
+#menu .items li i {
+    color: #2f3e46;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+}
+/*Efecto hover de los logos y enlaces del menu*/
+#menu .items li:hover i,
+#menu .items li:hover a {
+    color: rgb(255, 255, 255);
+    transition: .2s;
+}
+/*Enlaces*/
+#menu .items li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 300px;
+    transition: .3s ease;
+}
+
+/*Contenedor de la interfaz*/
+#interface {
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    position: relative;
+}
+/*Contenedor de la barra de navegación*/
+#interface .navigation {
+    display: flex;
+    justify-content: space-between;
+    background: #0d1b2a;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    position: fixed;
+    width: calc(100% - 300px);
+}
+/*Contenedor de la barra de búsqueda*/
+#interface .navigation .search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+}
+/*Logo de la barra de búsqueda*/
+#interface .navigation .search i {
+    margin-right: 14px;
+}
+#interface .navigation .search i:hover {
+    color: #1F7A1F;
+    transition: .2s;
+    cursor: pointer;
+}
+/*Input de la barra de búsqueda*/
+#interface .navigation .search input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+#interface .navigation .barras i{
+    font-size: 20px;
+    color: #E0E1DD;
+}
+#interface .navigation .barras i:hover{
+    color: #1F7A1F;
+    transition: .2s;
+    cursor: pointer;
+}
+/*Contenedor del perfil de usuario*/
+#interface .navigation .profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*Logo del perfil de usuario*/
+#interface .navigation .profile i {
+    font-weight: 400;
+    font-size: 19px;
+    margin-right: 20px;
+    color: #E0E1DD
+}
+#interface .navigation .profile i:hover {
+    color: #1F7A1F;
+    transition: .2s;
+    cursor: pointer;
+}
+/*Imagen del perfil de usuario*/
+#interface .navigation .profile img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/*Contenedor del contenido de la interfaz*/
+.n1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*Logo del menu para dispositivos moviles*/
+#menu-btn {
+    display: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;    
+}
+/*Contenedor del nombre de la interfaz*/
+.i-name{
+    color: #444a53;
+    padding: 30px 30px 0 30px;
+    font-size: 24px;
+    font-weight: 700px;
+    margin-top: 70px;
+}
+/*Contenedor de los valores de la interfaz*/
+.values {
+    padding: 30px 30px 0 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*Contenedor de cada valor de la interfaz*/
+.values .val-box {
+    background: #fff;
+    width: 235px;
+    padding: 16px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.values .val-box:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: .3s ease;
+    cursor: pointer;
+}
+/*Logo de cada valor de la interfaz*/
+.values .val-box i {
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    margin-right: 15px;
+}
+/*Colores de cada logo de cada valor de la interfaz*/
+.values .val-box:nth-child(1) i {
+    background: rgb(255, 0, 0);
+}
+
+.values .val-box:nth-child(2) i {
+    background: rgb(0, 183, 255);
+}
+
+.values .val-box:nth-child(3) i {
+    background: rgb(0, 58, 250);
+}
+
+.values .val-box:nth-child(4) i {
+    background: rgb(183, 0, 255);
+}
+
+.values .val-box:nth-child(5) i {
+    background: rgb(47, 0, 255);
+}
+/*Nombre de cada valor de la interfaz*/
+.values .val-box h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+/*Valor de cada valor de la interfaz*/
+.values .val-box span {
+    font-size: 15px;
+    color: rgb(134, 141, 151);
+}
+/*Contenedor del tablero de la interfaz*/
+.board {
+    width: 94%;
+    margin: 30px 0 30px 30px;
+    overflow: auto;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+/*Contenedor de cada fila del tablero de la interfaz*/
+.board img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+/*Nombre de cada fila del tablero de la interfaz*/
+.board h5 {
+    font-size: 14px;
+    font-weight: 600;
+}
+/*Descripción de cada fila del tablero de la interfaz*/
+.board p {
+    font-weight: 400;
+    font-size: 13px;
+    color: rgb(134, 141, 151);
+}
+/*Contenedor de la descripción de cada fila del tablero de la interfaz*/
+.board .people {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+}
+/*Contenedor de la tabla del tablero de la interfaz*/
+table {
+    border-collapse: collapse;
+}
+/*Contenedor de cada fila de la tabla del tablero de la interfaz*/
+tr {
+    border-bottom: 1px solid #eef0f3;
+}
+/*Contenedor de cada columna de la tabla del tablero de la interfaz*/
+thead  td{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    background: rgb(255, 255, 255);
+    text-align: start;
+    padding: 15px;
+}
+/*Contenedor de cada columna de cada fila de la tabla del tablero de la interfaz*/
+tbody tr td {
+    padding: 10px 15px;
+}
+/*Contenedor de cada fila activa de la tabla del tablero de la interfaz*/
+.active p {
+    background: rgb(109, 238, 92);
+    padding: 2px 10px;
+    display: inline-block;
+    border-radius: 40px;
+    color: seagreen;
+}
+/*Contenedor de cada fila inactiva de la tabla del tablero de la interfaz*/
+.edit a {
+    text-decoration: none;
+    font-size: 14px;
+    color: slateblue;
+    font-weight: 600;
+}
+/*Contenedor de cada fila inactiva de la tabla del tablero de la interfaz*/
+.edit .edit-btn {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(0, 89, 255);
+    border-radius: 20px;
+    text-decoration: none;
+}
+.edit .edit-btn i {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    line-height: 25px;
+    margin: auto;
+    display: block;
+}
+.edit .delete-btn {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 20px;
+    text-decoration: none;
+}
+.edit .delete-btn i {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    line-height: 25px;
+    margin: auto;
+    display: block;
+}
+/*Contenedor de cada fila inactiva de la tabla del tablero de la interfaz*/
+@media (max-width: 769px) {
+    #menu {
+    width: 270px;
+    position: fixed;
+    left: -270px;
+    }
+    #menu.active {
+    left: 0px;
+    }
+    #menu-btn {
+    display: initial;
+    }
+    #interface {
+        width: 100%;
+        margin-left: 0;
+        display: inline-block;
+        transition: 0.3s ease;
+    }
+    #menu.active ~ #interface {
+        width: calc(100% - 270px);
+        margin-left: 270px;
+    }
+    #interface .navigation {
+        width: 100%;
+    }
+    .values {
+    padding: 30px 30px 0 30px;
+    justify-content: flex-start;
+    }
+    .values .val-box {
+    padding: 16px 20px;
+    margin: 10px 20px 10px 0;
+    }
+    .board {
+    width: 92%;
+    padding: 0;
+    overflow-x: auto;
+    }
+    .table {
+    width: 100%;
+    border-collapse: collapse;
+    }
+}
+/*Contenedor de cada fila activa de la tabla del tablero de la interfaz*/
+@media (max-width: 470px) {
+   #interface .navigation {
+    padding: 15px;
+   }
+   #interface .navigation .search input {
+    width: 150px;
+   }
+   .i-name {
+    padding: 30px 15px 0 15px;
+   }
+   .values {
+    padding: 15px 15px 0 15px;
+   }
+   .values .val-box {
+    width: 100%;
+    margin: 8px 0;
+   }
+   .board {
+    margin: 30px 15px 30px 15px;
+    }
+}
+/*--------------INDEX--------------*/
+
+/*--------------ESTILOS REGISTRO--------------*/
+.body_registro{
+    display: flex; /*Utilizamos flexbox para centrar el contenido en la página*/
+    align-items: center;/*Centramos verticalmente el contenido*/
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../IMG/e.png);/*Cambiar la ruta de la imagen de fondo según tu estructura de archivos*/
+    background-size: cover;
+    padding: 20px;
+    overflow-y: auto;
+}
+.container-form{
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    height: 500px;
+    max-width: 900px;
+    transition: all 1s ease;
+    /*border: solid 1px #000;*/
+    margin: 10px;
+}
+.information{                                                            /*Contenedor para la sección de bienvenida o información adicional*/
+    width: 40%;                                                          /*Ancho del contenedor de información, ajustable según tus necesidades*/
+    display: flex;                                                       /*Utilizamos flexbox para centrar el contenido dentro del contenedor de información*/
+    align-items: center;                                                 /*Centramos verticalmente el contenido dentro del contenedor de información*/
+    justify-content: center;                                             /*Centramos horizontalmente el contenido dentro del contenedor de información*/
+    text-align: center;                                                  /*Alineamos el texto al centro dentro del contenedor de información*/
+    background-color: #E0E1DD;                                         /*Color de fondo para la sección de información, ajustable según tus necesidades*/
+    border-radius: 20px 0 0 20px;                                        /*Bordes redondeados para la sección de información, ajustable según tus necesidades*/
+    background: linear-gradient(135deg, transparent 0%, #1B263B 100%); /*Degradado de fondo para la sección de información, ajustable según tus necesidades*/
+}
+.form-welcoming{
+    width: 100%;
+    padding: 0 30px;
+}
+.form-welcoming h2{
+    font-size: 2.5rem;
+    color: #E0E1DD;
+
+}
+.form-welcoming p{
+    margin: 15px 0;
+    color: #E0E1DD;
+}
+.form-welcoming input {
+    background-color: transparent;
+    outline: none;
+    border: solid 2px #E0E1DD;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #E0E1DD;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+.form-welcoming input:hover{
+    background-color: #E0E1DD;
+    border: solid 2px #E0E1DD;
+    color: #1B263B;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.form-content{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 60%;  
+   text-align: center;
+   background-color: #1B263B;
+   color: #fff;
+   border-radius: 0 20px 20px 0;
+}
+.form-content-childs{
+    padding: 0 30px;
+}
+.form-content-childs h1{
+    color: #E0E1DD;
+    font-size: 2rem;
+}
+.form-content-childs p{
+    color: #f4f5f4;
+}
+.icons{
+    margin: 15px 0;
+}
+.icons ion-icon{
+    border-radius: 50%;
+    padding: 15px;
+    border: solid thin #f4f5f4;
+    cursor: pointer;
+    margin: 0 10px;
+    color: #f4f5f4;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.icons ion-icon:hover{
+    background-color: #f4f5f4;
+    color: #0D1B2A;
+}
+.form{
+    margin: 30px 0 0 0;
+    width: 100%;
+    height: 250px;
+    overflow-y: auto;
+}
+.form::-webkit-scrollbar {
+    width: 8px;
+}
+.input-field{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+}
+.input-field input{
+    width: 100%;
+    padding: 10px;
+    background-color: #1B263B;
+    color: #E0E1DD;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+.input-field select{
+    width: 100%;
+    padding: 10px;
+    background-color: #1B263B;
+    color: #E0E1DD;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+.input-field i{
+    color: #1F7A1F;
+}
+.input-field input::placeholder{
+    color: #E0E1DD;
+}
+.form button[type="submit"]{
+    background-color: #E0E1DD;
+    color: #1B263B;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.form button[type="submit"]:hover{
+    background-color: #1f7a1f;
+    color: #E0E1DD;
+    transition: .3s;
+}
+/*--------------RESPONSIVE DESIGN REGISTRO--------------*/
+@MEDIA screen and (max-width:500px){   /*Media query para pantallas con un ancho máximo de 500px, ideal para dispositivos móviles*/
+    html  {                            /*Estilos para el elemento raíz (html) en pantallas pequeñas*/
+        font-size: 10px;               /*Reducción del tamaño de fuente para mejorar la legibilidad en pantallas pequeñas, ajustable según tus necesidades*/   
+    }  
+
+    .container-form{                   /*Estilos para el contenedor principal del formulario en pantallas pequeñas*/
+        flex-direction: column;        /*Cambio de dirección del flexbox a columna para apilar los elementos verticalmente en lugar de horizontalmente, adaptándose mejor a pantallas estrechas*/
+        height: auto;                  /*Ajuste automático de la altura del contenedor para adaptarse al contenido, evitando problemas de desbordamiento en pantallas pequeñas*/
+    }
+
+    .information{                           /*Estilos para la sección de información en pantallas pequeñas*/
+        width: 100%;                        /*Ancho completo para la sección de información, ocupando toda la anchura disponible en pantallas pequeñas*/
+        padding: 20px;                      /*Espaciado interno para la sección de información, ajustable según tus necesidades*/ 
+        border-top-left-radius: 20px;       /*Borde redondeado en la esquina superior izquierda para la sección de información, ajustable según tus necesidades*/
+        border-top-right-radius: 20px;      /*Borde redondeado en la esquina superior derecha para la sección de información, ajustable según tus necesidades*/
+        border-bottom-left-radius: 0;       /*Eliminación del borde redondeado en la esquina inferior izquierda para la sección de información, ajustable según tus necesidades*/
+        border-bottom-right-radius: 0;      /*Eliminación del borde redondeado en la esquina inferior derecha para la sección de información, ajustable según tus necesidades*/
+    }
+
+    .form-content{
+        width: 100%;                        /*Ancho completo para la sección del formulario, ocupando toda la anchura disponible en pantallas pequeñas*/
+        padding: 20px;                      /*Espaciado interno para la sección del formulario, ajustable según tus necesidades*/
+        border-bottom-left-radius: 20px;    /*Borde redondeado en la esquina inferior izquierda para la sección del formulario, ajustable según tus necesidades*/
+        border-top-right-radius: 0px;       /*Eliminación del borde redondeado en la esquina superior derecha para la sección del formulario, ajustable según tus necesidades*/
+    }
+
+    .form-content-childs{
+        width: 100%;                        /*Ancho completo para los elementos hijos dentro de la sección del formulario, ocupando toda la anchura disponible en pantallas pequeñas*/  
+        padding: 20px;                      /*Espaciado interno para los elementos hijos dentro de la sección del formulario, ajustable según tus necesidades*/
+        border-bottom-left-radius: 20px;    /*Borde redondeado en la esquina inferior izquierda para los elementos hijos dentro de la sección del formulario, ajustable según tus necesidades*/
+        border-top-right-radius: 0px;       /*Eliminación del borde redondeado en la esquina superior derecha para los elementos hijos dentro de la sección del formulario, ajustable según tus necesidades*/
+    }  
+}
+/*--------------RESPONSIVE DESIGN REGISTRO--------------*/
+/*--------------ESTILOS REGISTRO/INICIO--------------*/
+
+/*--------------ESTILOS ANIMAL--------------*/
+
