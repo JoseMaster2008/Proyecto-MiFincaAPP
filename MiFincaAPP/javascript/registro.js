@@ -8,8 +8,3 @@ btnSingIn.addEventListener('click', ()=>{
 btnSingUp.addEventListener('click', ()=>{
     container.classList.add('toggle')
 });
-//const container = document.querySelector('.container');
-//
-//btn.addEventListener('click', ()=>{ 
-  //  container.classList.toggle('toggle')
-//});
